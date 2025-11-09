@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Head sama seperti profil.html, title: "Kurikulum - SMP PGRI Gringsing" -->
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Toggle & Nav (sama, active: Kurikulum) -->
+
+    <!-- Hero 3D Infografis -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600">
+        <div id="three-infografis" class="absolute inset-0 w-full h-full"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Kurikulum Merdeka</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">Visualisasikan Program Unggulan dalam 3D Interaktif.</p>
+            <a href="#program" class="btn-3d bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Lihat Program</a>
+        </div>
+    </section>
+
+    <!-- Konten Kurikulum -->
+    <section id="program" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Program Unggulan 2025</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="infografis-node 3d-tilt bg-blue-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-book-open text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Gerakan Literasi</h3>
+                    <p>Klub baca & menulis dengan proyek P5 (Penguatan Profil Pelajar Pancasila).</p>
+                </div>
+                <div class="infografis-node 3d-tilt bg-purple-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-robot text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">STEM & AI Education</h3>
+                    <p>Lab sains dengan coding dasar & AI tools untuk 152 siswa.</p>
+                </div>
+                <div class="infografis-node 3d-tilt bg-orange-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-heart text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Pendidikan Karakter</h3>
+                    <p>Pembinaan akhlak mulia berbasis iman & takwa PGRI.</p>
+                </div>
+                <div class="infografis-node 3d-tilt bg-red-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-globe text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Bahasa & Global</h3>
+                    <p>Inggris intensif & pertukaran budaya virtual 3D.</p>
+                </div>
+            </div>
+            <h3 class="text-3xl font-bold text-center mb-8">Jadwal Pelajaran Mingguan</h3>
+            <table class="w-full bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                <thead class="bg-blue-500 text-white">
+                    <tr><th class="p-4">Hari</th><th class="p-4">Pagi</th><th class="p-4">Siang</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b"><td class="p-4">Senin</td><td>Matematika, IPA</td><td>Agama, Seni</td></tr>
+                    <tr class="border-b"><td class="p-4">Selasa</td><td>Bahasa Indonesia, IPS</td><td>Olahraga, Literasi</td></tr>
+                    <!-- Tambah baris untuk lengkap: Rabu-Minggu -->
+                    <tr><td class="p-4">Rabu</td><td>Inggris, STEM</td><td>Projek P5, Karakter</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer sama -->
+    <!-- Scripts sama + <script>initKurikulum3D();</script> -->
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP PGRI Gringsing - Pendidikan Inovatif 2025: Iman, Ilmu, Masa Depan</title>
+    <meta name="description" content="Website Resmi SMP PGRI Gringsing Kendal 2025: Kurikulum Merdeka, 3D Virtual Tour, PPDB Online. NPSN 20322723.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- 3D Floating Nav (Spatial Menu) -->
+    <nav id="3d-nav" class="fixed top-0 left-0 w-full z-40 bg-white/80 backdrop-blur-md shadow-lg dark:bg-gray-800/80">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">SMP PGRI Gringsing</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-link 3d-text">Beranda</a></li>
+                <li><a href="profil.html" class="nav-link 3d-text">Profil</a></li>
+                <li><a href="kurikulum.html" class="nav-link 3d-text">Kurikulum</a></li>
+                <li><a href="guru.html" class="nav-link 3d-text">Guru</a></li>
+                <li><a href="kegiatan.html" class="nav-link 3d-text">Kegiatan</a></li>
+                <li><a href="fasilitas.html" class="nav-link 3d-text">Fasilitas</a></li>
+                <li><a href="galeri.html" class="nav-link 3d-text">Galeri 3D</a></li>
+                <li><a href="kontak.html" class="nav-link 3d-text">Kontak & PPDB</a></li>
+            </ul>
+            <button class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Hyperrealistic 3D Globe + Gedung Sekolah -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-blue-500 to-indigo-600">
+        <div id="three-hero" class="absolute inset-0 w-full h-full"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Selamat Datang di SMP PGRI Gringsing</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">Eksplorasi Pendidikan Merdeka 2025: 3D Virtual Tour, AI Bimbingan, dan Komunitas Global di Batang.</p>
+            <div class="space-x-4">
+                <a href="kontak.html#ppdb" class="btn-3d bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Daftar PPDB 2026</a>
+                <button onclick="startVoiceSearch()" class="btn-3d bg-transparent border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600">🎤 Voice Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section: Immersive Parallax 3D -->
+    <section class="stats py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
+        <div class="parallax-bg absolute inset-0 bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-gray-800 dark:to-gray-700"></div>
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Fakta Terkini 2025</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="stat-card 3d-tilt p-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg">
+                    <i class="fas fa-users text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-3xl font-bold counter" data-target="152">0</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Siswa Aktif</p>
+                </div>
+                <div class="stat-card 3d-tilt p-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-3xl font-bold counter" data-target="22">0</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Guru Sertified</p>
+                </div>
+                <div class="stat-card 3d-tilt p-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg">
+                    <i class="fas fa-calendar text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-3xl font-bold">1970</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Didirikan</p>
+                </div>
+                <div class="stat-card 3d-tilt p-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg">
+                    <i class="fas fa-award text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-green-500">B</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Akreditasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita: 3D Carousel Cards -->
+    <section class="berita py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Update Terkini 2025</h2>
+            <div id="news-carousel" class="grid md:grid-cols-3 gap-8">
+                <div class="news-card 3d-flip bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:rotate-y-180">
+                    <img src="https://via.placeholder.com/400x250?text=Workshop+AI+2025" alt="Workshop AI" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Workshop AI untuk Siswa</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Integrasi Kurikulum Merdeka dengan tools AI modern.</p>
+                        <a href="#" class="text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                <!-- Tambah 2 card: Lomba 3D Design & Virtual Tour Launch -->
+                <div class="news-card 3d-flip bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:rotate-y-180">
+                    <img src="https://via.placeholder.com/400x250?text=Lomba+3D" alt="Lomba 3D" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lomba Desain 3D Siswa</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Membangun kreativitas dengan software Spline.</p>
+                        <a href="#" class="text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                <div class="news-card 3d-flip bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:rotate-y-180">
+                    <img src="https://via.placeholder.com/400x250?text=Virtual+Tour" alt="Virtual Tour" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Peluncuran Virtual Tour 3D</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Jelajahi fasilitas sekolah secara virtual.</p>
+                        <a href="#" class="text-blue-500 font-semibold">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot Placeholder -->
+    <div id="ai-chat" class="fixed bottom-4 right-4 z-50 w-80 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-xl hidden p-4">
+        <h4 class="font-bold mb-2">AI Bimbingan PPDB</h4>
+        <div id="chat-messages" class="h-64 overflow-y-auto mb-4 space-y-2"></div>
+        <input type="text" id="chat-input" placeholder="Tanya tentang pendaftaran..." class="w-full p-2 border rounded">
+        <button onclick="sendMessage()" class="mt-2 w-full bg-blue-500 text-white p-2 rounded">Kirim</button>
+    </div>
+    <button onclick="toggleChat()" class="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-40">🤖</button>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 SMP PGRI Gringsing. Jl. Desa Ketanggan, Desa Ketanggan, Kec. Gringsing, Kab. Batang, Jawa Tengah 51281. NPSN: 20322723.</p>
+            <p class="mt-2">Tel: (0294) 123456 | Email: smppgrigringsing09@gmail.com</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

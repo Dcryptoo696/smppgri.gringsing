@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Head sama, title: "Fasilitas - SMP PGRI Gringsing" -->
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Toggle & Nav (active: Fasilitas) -->
+
+    <!-- Hero 3D Tour -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-orange-500 to-amber-600">
+        <div id="three-tour" class="absolute inset-0 w-full h-full"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Fasilitas Modern</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">Virtual Tour 3D: Jelajahi 12 Ruang Kelas & Lab.</p>
+            <a href="#tour" class="btn-3d bg-yellow-400 text-orange-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Mulai Tour</a>
+        </div>
+    </section>
+
+    <!-- Konten Fasilitas -->
+    <section id="tour" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Fasilitas Lengkap 2025</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="fasilitas-card 3d-tilt bg-blue-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-chalkboard text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">12 Ruang Kelas</h3>
+                    <p>AC, proyektor interaktif untuk Kurikulum Merdeka.</p>
+                </div>
+                <div class="fasilitas-card 3d-tilt bg-green-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-flask text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Lab IPA & Komputer</h3>
+                    <p>20 PC dengan software AI, akses WiFi gratis.</p>
+                </div>
+                <div class="fasilitas-card 3d-tilt bg-purple-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-book text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Perpustakaan Digital</h3>
+                    <p>500+ buku fisik/digital, zona baca 3D VR.</p>
+                </div>
+                <!-- Tambah: Lapangan Olahraga, Toilet ABK, Kantin Sehat -->
+                <div class="fasilitas-card 3d-tilt bg-red-500 text-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-running text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Lapangan Olahraga</h3>
+                    <p>Futsal, voli, atletik untuk ekstrakurikuler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sama -->
+    <!-- Scripts sama + <script>initFasilitas3D(); // Dengan OrbitControls</script> -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/examples/js/controls/OrbitControls.js"></script>
+</body>
+</html>

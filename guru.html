@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru & Staf - SMP PGRI Gringsing</title>
+    <meta name="description" content="Profil 14 Guru & Staf SMP PGRI Gringsing: Tim Berkualitas untuk 158 Siswa. NPSN 20322723.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- 3D Floating Nav -->
+    <nav id="3d-nav" class="fixed top-0 left-0 w-full z-40 bg-white/80 backdrop-blur-md shadow-lg dark:bg-gray-800/80">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">SMP PGRI Gringsing</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-link 3d-text">Beranda</a></li>
+                <li><a href="profil.html" class="nav-link 3d-text">Profil</a></li>
+                <li><a href="kurikulum.html" class="nav-link 3d-text">Kurikulum</a></li>
+                <li><a href="guru.html" class="nav-link 3d-text active">Guru & Staf</a></li>
+                <li><a href="kegiatan.html" class="nav-link 3d-text">Kegiatan</a></li>
+                <li><a href="fasilitas.html" class="nav-link 3d-text">Fasilitas</a></li>
+                <li><a href="galeri.html" class="nav-link 3d-text">Galeri 3D</a></li>
+                <li><a href="kontak.html" class="nav-link 3d-text">Kontak & PPDB</a></li>
+            </ul>
+            <button class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section: 3D Hologram Grid Preview -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-purple-500 to-violet-600">
+        <div id="three-hologram" class="absolute inset-0 w-full h-full"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Tim Guru & Staf Unggul</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">14 Profesional Bersertifikat: Rasio 1:11 untuk Pembelajaran Personal 2025</p>
+            <div class="space-x-4">
+                <a href="#guru-list" class="btn-3d bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Temui Tim Lengkap</a>
+                <button onclick="scrollToGuru()" class="btn-3d bg-transparent border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600">↓ Scroll ke Bawah</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Guru: Grid 3D Hologram Cards -->
+    <section id="guru-list" class="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
+        <div class="parallax-bg absolute inset-0 bg-gradient-to-r from-purple-100 to-violet-100 dark:from-gray-800 dark:to-gray-700 opacity-50"></div>
+        <div class="container mx-auto relative z-10 px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Daftar 14 Guru & Staf Utama</h2>
+            <p class="text-center text-lg mb-8 text-gray-600 dark:text-gray-300">Tim berpengalaman dengan sertifikasi terbaru, fokus Kurikulum Merdeka & Pengembangan Karakter.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Guru 1 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Indah+Sukanto" alt="Indah Sukanto" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-purple-400">
+                        <div class="absolute inset-0 bg-purple-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-purple-600 dark:text-purple-400">Indah Sukanto, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Kepala Sekolah</p>
+                    <p class="text-sm text-blue-500 mb-3">Sertifikasi 2025 | 15 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.9</span>
+                </div>
+
+                <!-- Guru 2 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Mela+Selviana" alt="Mela Selviana" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-400">
+                        <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Mela Slviana, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Wakil Kepala & Guru IPA</p>
+                    <p class="text-sm text-blue-500 mb-3">Spesialis STEM | 12 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Guru 3 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Juwanto" alt="Juwanto" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-green-400">
+                        <div class="absolute inset-0 bg-green-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-green-600 dark:text-green-400">Juwanto, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru PP</p>
+                    <p class="text-sm text-blue-500 mb-3">Koordinator Klub Baca | 10 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.7</span>
+                </div>
+
+                <!-- Guru 4 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Fatturohman" alt="Fatturohman" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-400">
+                        <div class="absolute inset-0 bg-orange-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-600 dark:text-orange-400">Fatturohman, S.Ag.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru PAI</p>
+                    <p class="text-sm text-blue-500 mb-3">Pelatih Ekstrakurikuler | 8 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.9</span>
+                </div>
+
+                <!-- Guru 5 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Maemun" alt="Maemun" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-red-400">
+                        <div class="absolute inset-0 bg-red-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-red-600 dark:text-red-400">Maemun, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru PAI</p>
+                    <p class="text-sm text-blue-500 mb-3">Fokus Projek P5 | 11 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.6</span>
+                </div>
+
+                <!-- Guru 6 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Fitriya+ashfiyani" alt="Fitriya Ashfiyani" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-400">
+                        <div class="absolute inset-0 bg-indigo-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-indigo-600 dark:text-indigo-400">Fitriya Asfiyani, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru Bahasa Inggris</p>
+                    <p class="text-sm text-blue-500 mb-3">Pembina Ekstra | 14 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Guru 7 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Zaenal+Muarif" alt="Zaenal Muarif" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400">
+                        <div class="absolute inset-0 bg-teal-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-teal-600 dark:text-teal-400">Zaenal Muarif, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru MTK</p>
+                    <p class="text-sm text-blue-500 mb-3">Pembimbing SAINS | 9 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.7</span>
+                </div>
+
+                <!-- Guru 8 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Agus+Bimo+Purwoko" alt="Agus Bimo Purwoko" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-yellow-400">
+                        <div class="absolute inset-0 bg-yellow-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-600 dark:text-yellow-400">Agus Bimo Purwoko, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru PJOK</p>
+                    <p class="text-sm text-blue-500 mb-3">Pembina Ekstra | 7 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.9</span>
+                </div>
+
+                <!-- Guru 9 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Tarmiati" alt="Tarmiati" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-pink-400">
+                        <div class="absolute inset-0 bg-pink-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-pink-600 dark:text-pink-400">Tarmiati, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru BK</p>
+                    <p class="text-sm text-blue-500 mb-3">Pembina Pramuka | 10 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.6</span>
+                </div>
+
+                <!-- Guru 10 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Eko+Nurjayanto" alt="Eko Nurjayanto" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-400">
+                        <div class="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-cyan-600 dark:text-cyan-400">Eko Nurjayanto, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru BK</p>
+                    <p class="text-sm text-blue-500 mb-3">Kepala Perpus | 13 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Guru 11 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Galuh+Parahita" alt="Galuh Parahita" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-lime-400">
+                        <div class="absolute inset-0 bg-lime-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-lime-600 dark:text-lime-400">Galuh Parahita, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru Bahasa Inggris</p>
+                    <p class="text-sm text-blue-500 mb-3">Bendahara | 6 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.7</span>
+                </div>
+
+                <!-- Guru 12 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Tatin+Swastika" alt="Tatin Swastika" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-amber-400">
+                        <div class="absolute inset-0 bg-amber-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-amber-600 dark:text-amber-400">Tatin Swastika, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru Bahasa Indonesia</p>
+                    <p class="text-sm text-blue-500 mb-3">Koordinator PPDB | 9 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.9</span>
+                </div>
+
+                <!-- Guru 13 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Salfa+Maftukhah" alt="Salfa Maftukhah" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-rose-400">
+                        <div class="absolute inset-0 bg-rose-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-rose-600 dark:text-rose-400">Salfa Maftukhah, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru IPS</p>
+                    <p class="text-sm text-blue-500 mb-3">Pelatih Coding | 8 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Guru 14 -->
+                <div class="guru-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Izzatul+Khasanah" alt="Izzatul Khasanah" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-400">
+                        <div class="absolute inset-0 bg-emerald-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-600 dark:text-emerald-400">Izzatul Khasanah, S.Pd.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Guru MTK</p>
+                    <p class="text-sm text-blue-500 mb-3">Pembina Lab | 12 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.7</span>
+                </div>
+
+                <!-- Staf 15 -->
+                <div class="staf-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Siti+Nur+Yumaroh" alt="Siti Nur Yumaroh" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-rose-400">
+                        <div class="absolute inset-0 bg-rose-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-rose-600 dark:text-rose-400">Siti Nur Yumaroh.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Staf TU</p>
+                    <p class="text-sm text-blue-500 mb-3">KTU | 8 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Staf 16 -->
+                <div class="staf-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Mashudi" alt="Mashudi" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-rose-400">
+                        <div class="absolute inset-0 bg-rose-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-rose-600 dark:text-rose-400">Mashudi.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Staf TU</p>
+                    <p class="text-sm text-blue-500 mb-3">Operator Sekolah | 8 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+
+                <!-- Staf 17 -->
+                <div class="staf-card 3d-hologram bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden p-6 text-center transform transition-all hover:scale-105">
+                    <div class="hologram-glow relative">
+                        <img src="https://via.placeholder.com/200x200?text=Sobirin" alt="Sobirin" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-rose-400">
+                        <div class="absolute inset-0 bg-rose-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-rose-600 dark:text-rose-400">Sobirin.</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2">Staf Penjaga</p>
+                    <p class="text-sm text-blue-500 mb-3">Penjaga | 8 Tahun Pengalaman</p>
+                    <i class="fas fa-star text-yellow-400"></i> <span class="text-sm">Rating: 4.8</span>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-600 dark:text-gray-300">Total 17 Guru & Staf | Rasio Guru-Siswa: 1:6 untuk Pembelajaran Optimal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 SMP PGRI Gringsing. Jl. Desa Ketanggan, Kec. Gringsing, Kab. Batang, Jawa Tengah 51281. NPSN: 20322723.</p>
+            <p class="mt-2">Tel: (0294) 123456 | Email: smppgrigringsing09@gmail.com</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function scrollToGuru() {
+            document.getElementById('guru-list').scrollIntoView({ behavior: 'smooth' });
+        }
+        initGuru3D(); // Init efek 3D khusus halaman ini
+    </script>
+</body>
+</html>

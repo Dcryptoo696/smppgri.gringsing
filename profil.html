@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - SMP PGRI Gringsing</title>
+    <meta name="description" content="Profil SMP PGRI Gringsing: Sejarah 1970, Visi Misi, Struktur Organisasi. NPSN 20322723.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Dark Mode Toggle & 3D Nav (Copy dari index.html) -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all">
+        <i class="fas fa-moon"></i>
+    </button>
+    <nav id="3d-nav" class="fixed top-0 left-0 w-full z-40 bg-white/80 backdrop-blur-md shadow-lg dark:bg-gray-800/80">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">SMP PGRI Gringsing</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-link 3d-text">Beranda</a></li>
+                <li><a href="profil.html" class="nav-link 3d-text active">Profil</a></li>
+                <li><a href="kurikulum.html" class="nav-link 3d-text">Kurikulum</a></li>
+                <li><a href="guru.html" class="nav-link 3d-text">Guru</a></li>
+                <li><a href="kegiatan.html" class="nav-link 3d-text">Kegiatan</a></li>
+                <li><a href="fasilitas.html" class="nav-link 3d-text">Fasilitas</a></li>
+                <li><a href="galeri.html" class="nav-link 3d-text">Galeri 3D</a></li>
+                <li><a href="kontak.html" class="nav-link 3d-text">Kontak & PPDB</a></li>
+            </ul>
+            <button class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero 3D Timeline -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-blue-500 to-indigo-600">
+        <div id="three-timeline" class="absolute inset-0 w-full h-full"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Profil Sekolah</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">Jelajahi Sejarah & Visi Kami dalam 3D Timeline Interaktif.</p>
+            <a href="#timeline" class="btn-3d bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Eksplorasi Timeline</a>
+        </div>
+    </section>
+
+    <!-- Konten Profil -->
+    <section id="timeline" class="py-20 bg-white dark:bg-gray-900 relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Sejarah Singkat</h2>
+            <div class="timeline-3d flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="timeline-node 3d-tilt bg-blue-500 text-white p-6 rounded-xl shadow-lg w-full md:w-1/4">
+                    <h3 class="text-2xl font-bold mb-2">1970: Pendirian</h3>
+                    <p>Didirikan oleh YAYASAN PGRI JATENG berdasarkan SK Kemdikbud.</p>
+                </div>
+                <div class="timeline-line bg-blue-500 h-1 w-32 md:w-1/6 transform rotate-90 md:rotate-0"></div>
+                <div class="timeline-node 3d-tilt bg-green-500 text-white p-6 rounded-xl shadow-lg w-full md:w-1/4">
+                    <h3 class="text-2xl font-bold mb-2">2000: Akreditasi Awal</h3>
+                    <p>Capai akreditasi B, fokus pendidikan karakter.</p>
+                </div>
+                <div class="timeline-line bg-blue-500 h-1 w-32 md:w-1/6 transform rotate-90 md:rotate-0"></div>
+                <div class="timeline-node 3d-tilt bg-purple-500 text-white p-6 rounded-xl shadow-lg w-full md:w-1/4">
+                    <h3 class="text-2xl font-bold mb-2">2025: Kurikulum Merdeka</h3>
+                    <p>Integrasi AI & 3D learning untuk 158 siswa.</p>
+                </div>
+            </div>
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">Visi</h3>
+                    <p class="text-lg">Mewujudkan sekolah unggul berlandaskan iman dan takwa, menghasilkan lulusan beriman, berilmu, terampil, dan berakhlak mulia di era digital.</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">Misi</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Mengembangkan kurikulum berbasis karakter & teknologi 3D.</li>
+                        <li>Meningkatkan kualitas 14 guru melalui sertifikasi berkelanjutan.</li>
+                        <li>Membangun kemitraan dengan masyarakat Sekitar.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <h3 class="text-3xl font-bold mb-4">Struktur Organisasi</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">Kepala Sekolah: Indah Sukanto, S.Pd.</div>
+                    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">Wakil Kepala: Mela Selviana, S.Pd.</div>
+                    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">Koordinator Kurikulum: Juwanto, S.Pd.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copy dari index.html) -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 SMP PGRI Gringsing. Jl. Desa Ketanggan, Kec. Gringsing, Kab. Batang, Jawa Tengah 51281. NPSN: 20322723.</p>
+            <p class="mt-2">Tel: (0294) 123456 | Email: smppgrigringsing09@gmail.com</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Copy dari index.html) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>initProfil3D();</script> <!-- Extend script untuk halaman ini -->
+</body>
+</html>

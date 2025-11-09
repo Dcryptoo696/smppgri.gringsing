@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Head sama, title: "Kontak & PPDB - SMP PGRI Gringsing" -->
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter antialiased" data-theme="light">
+    <!-- Toggle & Nav (active: Kontak & PPDB) -->
+
+    <!-- Hero 3D Map -->
+    <section class="hero relative h-screen overflow-hidden bg-gradient-to-br from-teal-500 to-cyan-600">
+        <div id="three-map" class="absolute inset-0 w-full h-full"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 3d-morph-text">Hubungi Kami</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl">Lokasi 3D & Form PPDB Online 2026.</p>
+            <a href="#ppdb" class="btn-3d bg-yellow-400 text-teal-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Konten Kontak -->
+    <section id="ppdb" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Informasi Kontak</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Alamat</h3>
+                    <p>Jl. Desa Ketanggan, Kec. Gringsing, Kab. Batang, Jawa Tengah 51281</p>
+                    <p class="mt-2"><i class="fas fa-phone"></i> (0294) 123456</p>
+                    <p><i class="fas fa-envelope"></i> info@smppgrigringsing.com</p>
+                </div>
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Jam Operasional</h3>
+                    <ul class="space-y-2">
+                        <li>Senin-Jumat: 07:30 - 14:00</li>
+                        <li>Sabtu: 08:00 - 11:00 (Ekstrakurikuler)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="text-3xl font-bold text-center mb-8">Form PPDB 2026</h3>
+            <form class="max-w-md mx-auto space-y-4" netlify>
+                <input type="text" placeholder="Nama Lengkap" class="w-full p-3 border rounded-lg" required>
+                <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required>
+                <input type="tel" placeholder="No. HP" class="w-full p-3 border rounded-lg" required>
+                <textarea placeholder="Alasan Memilih SMP PGRI Gringsing" rows="4" class="w-full p-3 border rounded-lg"></textarea>
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition">Kirim Pendaftaran</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer sama -->
+    <!-- Scripts sama + <script>initKontak3D();</script> -->
+</body>
+</html>
